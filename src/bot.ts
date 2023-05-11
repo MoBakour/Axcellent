@@ -15,6 +15,8 @@ import linkHandler from "./handlers/linkHandler";
 
 // env variables
 const TOKEN = process.env.TOKEN!;
+const DOMAIN = process.env.DOMAIN!;
+const PORT = parseInt(process.env.PORT || "3000");
 
 // bot instance
 const bot = new Telegraf<AxContext>(TOKEN);
@@ -38,5 +40,15 @@ mediaHandler(bot);
 linkHandler(bot);
 
 // launch bot
-
-bot.launch();
+bot.launch({
+    webhook: {
+        domain: DOMAIN,
+        port: PORT,
+    },
+})
+    .then(() => {
+        console.log(`Webhook bot listeing on port ${PORT}`);
+    })
+    .catch((err) => {
+        console.error(err);
+    });
