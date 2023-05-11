@@ -1,0 +1,35 @@
+{
+    "name": "axcellentbot",
+    "version": "1.0.0",
+    "description": "Axcellent Bot, a Telegram bot equipped with various tools",
+    "main": "./dist/bot.js",
+    "scripts": {
+        "build": "npm install && tsc",
+        "start": "node ./dist/bot.js",
+        "dev": "nodemon"
+    },
+    "keywords": [
+        "telegram",
+        "bot",
+        "telegraf",
+        "nodejs",
+        "tools",
+        "imagetopdf",
+        "download"
+    ],
+    "author": "Swordax",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^20.1.0",
+        "nodemon": "^2.0.22",
+        "typescript": "^5.0.4"
+    },
+    "dependencies": {
+        "axios": "^1.4.0",
+        "dotenv": "^16.0.3",
+        "pdf-lib": "^1.17.1",
+        "telegraf": "^4.12.2",
+        "tiktok-scraper-ts": "^1.4.1",
+        "ytdl-core": "^4.11.4"
+    }
+}
