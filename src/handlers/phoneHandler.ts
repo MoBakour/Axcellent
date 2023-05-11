@@ -19,11 +19,10 @@ export default (bot: Telegraf<AxContext>) => {
             return next();
         }
 
-        phoneNumber = phoneNumber.replaceAll(" ", "");
-        phoneNumber = phoneNumber.replaceAll("(", "");
-        phoneNumber = phoneNumber.replaceAll(")", "");
-        phoneNumber = phoneNumber.replaceAll("+", "");
+        // clean phone number string
+        phoneNumber = phoneNumber.replace(/[ ()+]/g, "");
 
+        // build URL and reply
         const url = `https://wa.me/${phoneNumber}`;
 
         await ctx.reply(messages.whatsappCommandMessage[language], {
