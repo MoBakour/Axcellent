@@ -45,13 +45,3 @@
 ### Deployed
 
 -   Deployed v1.0.0
-
-## [1.0.1] - 13-05-2023
-
-### Changed
-
--   Changed code structure and bot launching technique to align with netlify functions
-
-### Deployed
-
--   Deployed v1.0.1

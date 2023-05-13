@@ -38,18 +38,4 @@ mediaHandler(bot);
 linkHandler(bot);
 
 // launch bot
-export const handler = async (event: any) => {
-    try {
-        await bot.handleUpdate(JSON.parse(event.body));
-        return {
-            statusCode: 200,
-            body: "",
-        };
-    } catch (err: any) {
-        console.error(err);
-        return {
-            statusCode: 400,
-            body: "This endpoint is meant for bot and telegram communication",
-        };
-    }
-};
+bot.launch();

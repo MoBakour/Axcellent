@@ -2,8 +2,10 @@
     "name": "axcellentbot",
     "version": "1.0.0",
     "description": "Axcellent Bot, a Telegram bot equipped with various tools",
-    "main": "./functions/bot/bot.js",
+    "main": "./dist/bot.js",
     "scripts": {
+        "build": "npm install && tsc",
+        "start": "node ./dist/bot.js",
         "dev": "nodemon"
     },
     "keywords": [
