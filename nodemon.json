@@ -1,4 +1,4 @@
 {
-    "watch": ["./dist"],
+    "watch": ["./functions/bot"],
     "ext": "js,json,mjs,ts,jsx,tsx"
 }
