@@ -28,12 +28,6 @@ bot.use(
     })
 );
 
-// log users
-bot.use((ctx, next) => {
-    console.log(ctx.from?.username);
-    next();
-});
-
 // handlers
 startCommand(bot);
 helpCommand(bot);

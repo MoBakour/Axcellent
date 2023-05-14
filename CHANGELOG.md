@@ -50,8 +50,7 @@
 
 ### Added
 
--   Bot logs username of request sender
--   Bot logs errors
+-   Error logging
 
 ### Deployed
 
