@@ -45,3 +45,14 @@
 ### Deployed
 
 -   Deployed v1.0.0
+
+## [1.0.1] - 14-05-2023
+
+### Added
+
+-   Bot logs username of request sender
+-   Bot logs errors
+
+### Deployed
+
+-   Deployed v1.0.1

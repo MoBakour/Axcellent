@@ -37,6 +37,7 @@ export default (bot: Telegraf<AxContext>) => {
             const result = await uploadFile(bot, ctx);
             await ctx.reply(result);
         } catch (err: any) {
+            console.error(err);
             await ctx.reply(messages.errorMessage[language]);
         } finally {
             await ctx.answerCbQuery();
@@ -58,6 +59,7 @@ export default (bot: Telegraf<AxContext>) => {
                 filename: "photo.pdf",
             });
         } catch (err: any) {
+            console.error(err);
             await ctx.reply(messages.errorMessage[language]);
         } finally {
             await ctx.answerCbQuery();
@@ -78,6 +80,7 @@ export default (bot: Telegraf<AxContext>) => {
             const result = await uploadFile(bot, ctx);
             await ctx.reply(result);
         } catch (err: any) {
+            console.error(err);
             await ctx.reply(messages.errorMessage[language]);
         } finally {
             await ctx.deleteMessage(waitMessage.message_id);
