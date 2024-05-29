@@ -28,5 +28,5 @@ To get the whatsapp chat link, send the mobile number
 
 ### Contact
 
-This bot is created by [Swordax](https://github.com/SwordaxSy)
+This bot is created by [MoBakour](https://github.com/MoBakour)
 Find me on different platforms at [Linktree](https://linktr.ee/swordax)
